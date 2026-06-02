@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jimin Football Profile</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container">
+      <div class="brand">JIMIN</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#stats">Stats</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-content">
+        <div>
+          <p class="eyebrow">월드컵 · 스트라이커 · 리더</p>
+          <h1>류지민</h1>
+          <p>조직적인 공격과 강한 압박으로 팀을 이끄는 대한민국 대표 축구선수. 이번 월드컵 무대에서 더 높은 순간을 준비합니다.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#stats">기록 보기</a>
+            <a class="button secondary" href="#contact">팬 메시지</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&q=80" alt="Soccer player profile" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="segment segment-light">
+      <div class="container segment-grid">
+        <div>
+          <h2>About Jimin</h2>
+          <p>Jimin은 월드컵에 출전하는 대한민국 대표 축구선수입니다. 빠른 스피드와 정확한 패스로 경기를 지배하며, 팀의 승리를 위해 끝까지 뛰는 스트라이커입니다.</p>
+          <ul>
+            <li>포지션: 스트라이커 / 윙어</li>
+            <li>주요 능력: 침투 속도, 공간 창출, 골 결정력</li>
+            <li>월드컵 출전: 2026 FIFA 월드컵 대표팀</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <h3>Highlight</h3>
+          <p>월드컵 무대에서 강한 정신력과 침착함으로 팬들에게 감동을 선사하는 선수. 팀워크를 중심에 두고 결정적인 순간에 돋보이는 골을 만들어냅니다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stats" class="segment segment-dark">
+      <div class="container">
+        <h2>Career Stats</h2>
+        <div class="music-grid">
+          <article class="music-card">
+            <h3>국가대표 출전</h3>
+            <p>2026 월드컵 대표팀 소속. 국제 경기에서 안정적인 존재감을 보여주고 있습니다.</p>
+          </article>
+          <article class="music-card">
+            <h3>득점 기록</h3>
+            <p>지난 시즌 15골 10어시스트를 기록하며 공격의 핵심으로 활약했습니다.</p>
+          </article>
+          <article class="music-card">
+            <h3>기술</h3>
+            <p>드리블, 크로스, 최종슛 완성도까지 두루 갖춘 올 라운드 선수.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="segment">
+      <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+          <div class="gallery-item">Stadium Action</div>
+          <div class="gallery-item">Training Session</div>
+          <div class="gallery-item">Goal Celebration</div>
+          <div class="gallery-item">National Team</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="segment segment-light">
+      <div class="container contact-card">
+        <div>
+          <h2>Contact</h2>
+          <p>월드컵 여정을 함께할 팬들의 응원을 기다립니다.</p>
+          <div class="contact-info">
+            <p><strong>이름:</strong> 박지민</p>
+            <p><strong>포지션:</strong> 스트라이커 / 윙어</p>
+          </div>
+        </div>
+        <form id="contactForm">
+          <label for="name">이름</label>
+          <input type="text" id="name" name="name" placeholder="당신의 이름" required />
+          <label for="message">메시지</label>
+          <textarea id="message" name="message" rows="5" placeholder="응원 메시지를 남겨보세요." required></textarea>
+          <button type="submit" class="button primary">보내기</button>
+          <p id="formMessage" class="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Jimin Football Profile. 월드컵 무대에서 함께 뛰겠습니다.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

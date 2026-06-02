@@ -1,0 +1,76 @@
+2026-06-01 16:22:28,825 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:22:28,825 [INFO] 로그인 시도 중...
+2026-06-01 16:22:28,904 [ERROR] 로그인 페이지 접근 실패: 404 Client Error: 404 for url: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:22:28,904 [ERROR] 로그인에 실패하여 종료합니다.
+2026-06-01 16:26:24,526 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:26:24,526 [INFO] 로그인 시도 중...
+2026-06-01 16:26:24,587 [ERROR] 로그인 페이지 접근 실패: 404 Client Error: 404 for url: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:26:24,587 [ERROR] 로그인에 실패하여 종료합니다.
+2026-06-01 16:27:14,339 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:27:14,339 [INFO] 로그인 시도 중...
+2026-06-01 16:27:14,339 [INFO] 로그인 페이지 접근: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:27:14,347 [DEBUG] Starting new HTTPS connection (1): ctas.krcert.or.kr:443
+2026-06-01 16:27:14,385 [DEBUG] https://ctas.krcert.or.kr:443 "GET /auth/login HTTP/1.1" 404 400
+2026-06-01 16:27:14,400 [INFO] 로그인 페이지 응답: 404
+2026-06-01 16:27:14,401 [ERROR] ❌ 로그인 페이지 접근 실패: 404 Client Error: 404 for url: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:27:14,401 [ERROR] 로그인에 실패하여 종료합니다.
+2026-06-01 16:27:23,652 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:27:23,652 [INFO] 로그인 시도 중...
+2026-06-01 16:27:23,652 [INFO] 로그인 페이지 접근: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:27:23,652 [DEBUG] Starting new HTTPS connection (1): ctas.krcert.or.kr:443
+2026-06-01 16:27:23,686 [DEBUG] https://ctas.krcert.or.kr:443 "GET /auth/login HTTP/1.1" 404 400
+2026-06-01 16:27:23,686 [INFO] 로그인 페이지 응답: 404
+2026-06-01 16:27:23,686 [ERROR] ❌ 로그인 페이지 접근 실패: 404 Client Error: 404 for url: https://ctas.krcert.or.kr/auth/login
+2026-06-01 16:27:23,686 [ERROR] 로그인에 실패하여 종료합니다.
+2026-06-01 16:40:12,524 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:40:12,524 [INFO] 로그인 시도 중...
+2026-06-01 16:40:12,524 [INFO] 로그인 페이지 접근: https://ctas.krcert.or.kr/index
+2026-06-01 16:40:12,526 [DEBUG] Starting new HTTPS connection (1): ctas.krcert.or.kr:443
+2026-06-01 16:40:12,589 [DEBUG] https://ctas.krcert.or.kr:443 "GET /index HTTP/1.1" 200 None
+2026-06-01 16:40:12,591 [INFO] 로그인 페이지 응답: 200
+2026-06-01 16:40:12,591 [INFO] 로그인 POST 시도: https://ctas.krcert.or.kr/login
+2026-06-01 16:40:12,689 [DEBUG] https://ctas.krcert.or.kr:443 "POST /login HTTP/1.1" 302 0
+2026-06-01 16:40:12,716 [DEBUG] https://ctas.krcert.or.kr:443 "GET /main HTTP/1.1" 200 None
+2026-06-01 16:40:12,719 [INFO] 로그인 응답 상태코드: 200
+2026-06-01 16:40:12,719 [INFO] 로그인 후 URL: https://ctas.krcert.or.kr/main
+2026-06-01 16:40:12,720 [DEBUG] 응답 길이: 31197 bytes
+2026-06-01 16:40:12,720 [INFO] ✅ 로그인 성공
+2026-06-01 16:40:12,722 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download?date=20260601
+2026-06-01 16:40:12,733 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/download?date=20260601 HTTP/1.1" 404 400
+2026-06-01 16:40:12,734 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download?date=20260601
+2026-06-01 16:40:12,734 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/export/20260601.csv
+2026-06-01 16:40:12,737 [DEBUG] Starting new HTTPS connection (2): ctas.krcert.or.kr:443
+2026-06-01 16:40:12,766 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/export/20260601.csv HTTP/1.1" 404 400
+2026-06-01 16:40:12,770 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/export/20260601.csv
+2026-06-01 16:40:12,770 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download/latest
+2026-06-01 16:40:12,774 [DEBUG] Starting new HTTPS connection (3): ctas.krcert.or.kr:443
+2026-06-01 16:40:12,810 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/download/latest HTTP/1.1" 404 400
+2026-06-01 16:40:12,811 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download/latest
+2026-06-01 16:40:12,811 [ERROR] ❌ 20260601 날짜의 CSV 다운로드 실패 — 모든 URL 시도 소진
+2026-06-01 16:40:12,812 [ERROR] === 다운로드 실패 ===
+2026-06-01 16:41:17,751 [INFO] === CTAS CSV 다운로드 시작 | 대상 날짜: 20260601 ===
+2026-06-01 16:41:17,751 [INFO] 로그인 시도 중...
+2026-06-01 16:41:17,751 [INFO] 로그인 페이지 접근: https://ctas.krcert.or.kr/index
+2026-06-01 16:41:17,751 [DEBUG] Starting new HTTPS connection (1): ctas.krcert.or.kr:443
+2026-06-01 16:41:17,819 [DEBUG] https://ctas.krcert.or.kr:443 "GET /index HTTP/1.1" 200 None
+2026-06-01 16:41:17,821 [INFO] 로그인 페이지 응답: 200
+2026-06-01 16:41:17,821 [INFO] 로그인 POST 시도: https://ctas.krcert.or.kr/login
+2026-06-01 16:41:17,922 [DEBUG] https://ctas.krcert.or.kr:443 "POST /login HTTP/1.1" 302 0
+2026-06-01 16:41:17,952 [DEBUG] https://ctas.krcert.or.kr:443 "GET /main HTTP/1.1" 200 None
+2026-06-01 16:41:17,954 [INFO] 로그인 응답 상태코드: 200
+2026-06-01 16:41:17,954 [INFO] 로그인 후 URL: https://ctas.krcert.or.kr/main
+2026-06-01 16:41:17,954 [DEBUG] 응답 길이: 31197 bytes
+2026-06-01 16:41:17,954 [INFO] ✅ 로그인 성공
+2026-06-01 16:41:17,954 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download?date=20260601
+2026-06-01 16:41:17,965 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/download?date=20260601 HTTP/1.1" 404 400
+2026-06-01 16:41:17,967 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download?date=20260601
+2026-06-01 16:41:17,967 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/export/20260601.csv
+2026-06-01 16:41:17,970 [DEBUG] Starting new HTTPS connection (2): ctas.krcert.or.kr:443
+2026-06-01 16:41:17,989 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/export/20260601.csv HTTP/1.1" 404 400
+2026-06-01 16:41:17,999 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/export/20260601.csv
+2026-06-01 16:41:17,999 [INFO] 다운로드 시도: https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download/latest
+2026-06-01 16:41:18,002 [DEBUG] Starting new HTTPS connection (3): ctas.krcert.or.kr:443
+2026-06-01 16:41:18,036 [DEBUG] https://ctas.krcert.or.kr:443 "GET /threatnew/worker/sharesCombine/download/latest HTTP/1.1" 404 400
+2026-06-01 16:41:18,036 [WARNING] 파일 없음 (404): https://ctas.krcert.or.kr/threatnew/worker/sharesCombine/download/latest
+2026-06-01 16:41:18,052 [ERROR] ❌ 20260601 날짜의 CSV 다운로드 실패 — 모든 URL 시도 소진
+2026-06-01 16:41:18,054 [ERROR] === 다운로드 실패 ===

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demo Page</title>
+  <style>
+    :root {
+      --main-bg: #1d3557;
+      --accent: #e63946;
+      --text: #f1faee;
+      --card: rgba(255, 255, 255, 0.1);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #457b9d 0%, #1d3557 100%);
+      color: var(--text);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 24px;
+      backdrop-filter: blur(14px);
+      padding: 2rem;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+    }
+
+    h1 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      line-height: 1.75;
+      margin-bottom: 1.5rem;
+      max-width: 45rem;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      border: none;
+      border-radius: 999px;
+      padding: 0.95rem 1.6rem;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 180ms ease, box-shadow 180ms ease, background-color 180ms ease;
+      background-color: var(--accent);
+      color: white;
+      box-shadow: 0 12px 30px rgba(230, 57, 70, 0.24);
+    }
+
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 18px 32px rgba(230, 57, 70, 0.35);
+    }
+
+    .output {
+      background: var(--card);
+      border-radius: 18px;
+      padding: 1.5rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      min-height: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      letter-spacing: 0.02em;
+    }
+
+    .highlight {
+      color: #a8dadc;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1.5rem;
+      }
+
+      .button-row {
+        flex-direction: column;
+      }
+
+      button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>HTML5 · CSS3 · JavaScript Demo</h1>
+    <p>이 페이지는 기본적인 HTML, CSS, JavaScript 기능을 보여줍니다. 버튼을 눌러서 동적인 동작을 확인해 보세요.</p>
+
+    <div class="button-row">
+      <button id="timeBtn">현재 시간 표시</button>
+      <button id="colorBtn">배경색 변경</button>
+      <button id="messageBtn">환영 메시지</button>
+    </div>
+
+    <div class="output" id="output">버튼을 눌러 결과를 확인하세요.</div>
+  </div>
+
+  <script>
+    const output = document.getElementById('output');
+    const timeBtn = document.getElementById('timeBtn');
+    const colorBtn = document.getElementById('colorBtn');
+    const messageBtn = document.getElementById('messageBtn');
+
+    const colors = ['#ffb703', '#2a9d8f', '#e63946', '#8ecae6', '#ff006e'];
+
+    timeBtn.addEventListener('click', () => {
+      const now = new Date();
+      output.textContent = `현재 시간: ${now.toLocaleTimeString('ko-KR')}`;
+    });
+
+    colorBtn.addEventListener('click', () => {
+      const nextColor = colors[Math.floor(Math.random() * colors.length)];
+      document.body.style.background = `linear-gradient(135deg, ${nextColor} 0%, #1d3557 100%)`;
+      output.textContent = '배경색이 변경되었습니다!';
+    });
+
+    messageBtn.addEventListener('click', () => {
+      output.innerHTML = `환영합니다! <span class="highlight">JavaScript</span>로 간단한 동작을 구현했습니다.`;
+    });
+  </script>
+</body>
+</html>
