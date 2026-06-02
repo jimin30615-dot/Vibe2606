@@ -1,0 +1,17 @@
+body {
+  font-family: 'Noto Sans KR', 'Inter', 'system-ui', sans-serif;
+}
+
+.todo-item {
+  border-radius: 1.75rem;
+  border: 1px solid rgba(226, 232, 240, 1);
+  background-color: rgba(255, 255, 255, 0.88);
+}
+
+.todo-delete {
+  transition: color 0.2s ease;
+}
+
+.todo-delete:hover {
+  color: #f43f5e;
+}
